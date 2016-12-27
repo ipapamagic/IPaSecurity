@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6EF84BB6272D5769A455170B2BCD366240E77679",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B20FAA493A9BC4CA156BAE5B04F09DC5B0D8D1AB" : 0,
+    "6EF84BB6272D5769A455170B2BCD366240E77679" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E04CF15C-DC7B-4309-9563-E15DCDD152BB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B20FAA493A9BC4CA156BAE5B04F09DC5B0D8D1AB" : "",
+    "6EF84BB6272D5769A455170B2BCD366240E77679" : "IPaSecurity\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IPaSecurity",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IPaSecurity.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ipapamagic\/IPaSecurity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6EF84BB6272D5769A455170B2BCD366240E77679"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ipapamagic\/IPaURLTool.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B20FAA493A9BC4CA156BAE5B04F09DC5B0D8D1AB"
+    }
+  ]
+}

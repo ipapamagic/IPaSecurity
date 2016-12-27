@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E04CF15C-DC7B-4309-9563-E15DCDD152BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IPaSecurity</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B20FAA493A9BC4CA156BAE5B04F09DC5B0D8D1AB</key>
+		<string>https://github.com/ipapamagic/IPaURLTool.git</string>
+		<key>D4B3F4D9766FF32938554B1C9576B131C032AFE9</key>
+		<string>https://github.com/ipapamagic/IPaSecurity.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IPaSecurity.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B20FAA493A9BC4CA156BAE5B04F09DC5B0D8D1AB</key>
+		<string>../../..</string>
+		<key>D4B3F4D9766FF32938554B1C9576B131C032AFE9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ipapamagic/IPaSecurity.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D4B3F4D9766FF32938554B1C9576B131C032AFE9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B20FAA493A9BC4CA156BAE5B04F09DC5B0D8D1AB</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D4B3F4D9766FF32938554B1C9576B131C032AFE9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IPaSecurity</string>
+		</dict>
+	</array>
+</dict>
+</plist>
