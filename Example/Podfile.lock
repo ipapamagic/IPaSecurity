@@ -1,0 +1,22 @@
+PODS:
+  - IDZSwiftCommonCrypto (0.9.0)
+  - IPaLog (1.0)
+  - IPaSecurity (0.1.0):
+    - IDZSwiftCommonCrypto (~> 0.9.0)
+    - IPaLog
+
+DEPENDENCIES:
+  - IPaSecurity (from `../`)
+
+EXTERNAL SOURCES:
+  IPaSecurity:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IDZSwiftCommonCrypto: 60f14492730da20117ce5875b890c7a6fc38ab8c
+  IPaLog: 4119e2b1fe337dc8857d8d08c2436ddda261de55
+  IPaSecurity: 8e4a9638e8ee2dfabab41536fe57d758b3201254
+
+PODFILE CHECKSUM: bafecc31ec8d9540ea8ab4790b2cf01eb4729721
+
+COCOAPODS: 1.1.1
