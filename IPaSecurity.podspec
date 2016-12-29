@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '8.0'
 
-    s.source_files = 'IPaSecurity/Classes/*'
+    s.source_files = 'IPaSecurity/Classes/**/*'
 
     # s.resource_bundles = {
     #   'IPaSecurity' => ['IPaSecurity/Assets/*.png']
@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
     # s.public_header_files = 'Pod/Classes/**/*.h'
     # s.frameworks = 'UIKit', 'MapKit'
     #s.dependency 'IDZSwiftCommonCrypto', '~> 0.9.0'
-    s.dependency 'IPaLog'
+    #s.dependency 'IPaLog'
     #s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 end

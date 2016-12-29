@@ -7,143 +7,159 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A74BD273C8E2B4E937E929D /* Pods_IPaSecurity_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F186DE146260938A29F1DE5 /* Pods_IPaSecurity_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		6E742C711E14FEA30062CE3A /* IPaSecurityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E742C701E14FEA30062CE3A /* IPaSecurityTest.m */; };
+		6E742C9F1E150AA50062CE3A /* IPaSecurityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E742C9E1E150AA50062CE3A /* IPaSecurityTest.m */; };
+		73BD3211FFC06FFFCDF471EF /* libPods-IPaSecurityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBA980D2DC17CAAE24A159D /* libPods-IPaSecurityTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		140049D0320472E1541AB7C1 /* IPaSecurity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IPaSecurity.podspec; path = ../IPaSecurity.podspec; sourceTree = "<group>"; };
-		2385783CA1D4C43AAB2F5B70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* IPaSecurity_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPaSecurity_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6E742C6F1E14FEA30062CE3A /* IPaSecurityTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPaSecurityTest.h; sourceTree = "<group>"; };
-		6E742C701E14FEA30062CE3A /* IPaSecurityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPaSecurityTest.m; sourceTree = "<group>"; };
-		89B5B774F6323021B769E82F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8F186DE146260938A29F1DE5 /* Pods_IPaSecurity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPaSecurity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9802331BC14AB4DCBC6D41EB /* Pods-IPaSecurity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPaSecurity_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DC778E08A6D8380F2633C34E /* Pods-IPaSecurity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPaSecurity_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		00D56B7EA147BF80F5D0D2A1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		25CAAFBAB2AD48485026DA16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2B5352E437BF27A0451DF84B /* Pods-IPaSecurityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPaSecurityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPaSecurityTests/Pods-IPaSecurityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3233AF4A725642AFBEDE425D /* Pods-IPaSecurityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPaSecurityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPaSecurityTests/Pods-IPaSecurityTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EBA980D2DC17CAAE24A159D /* libPods-IPaSecurityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IPaSecurityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6E742C891E150A450062CE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E742C8E1E150A460062CE3A /* IPaSecurityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPaSecurityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E742C951E150A460062CE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E742C9D1E150AA50062CE3A /* IPaSecurityTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPaSecurityTest.h; sourceTree = "<group>"; };
+		6E742C9E1E150AA50062CE3A /* IPaSecurityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPaSecurityTest.m; sourceTree = "<group>"; };
+		8608B122BFA4AEE990588B81 /* Pods-IPaSecurity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPaSecurity_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D97AC4FF346447BE335DF7C /* Pods-IPaSecurity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPaSecurity_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B67B89D78F6FAA41B5A92915 /* IPaSecurity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IPaSecurity.podspec; path = ../IPaSecurity.podspec; sourceTree = "<group>"; };
+		CB17FDA29D6CEE77D1882E32 /* Pods_IPaSecurity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPaSecurity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AFCCA91DCD1B11C9DA4C93 /* libPods-IPaSecurity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IPaSecurity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		6E742C8B1E150A460062CE3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A74BD273C8E2B4E937E929D /* Pods_IPaSecurity_Tests.framework in Frameworks */,
+				73BD3211FFC06FFFCDF471EF /* libPods-IPaSecurityTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B63419EC8FA599ACFE330C4 /* Frameworks */ = {
+		395B1FBD3CCCF4DCE1511D4A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8F186DE146260938A29F1DE5 /* Pods_IPaSecurity_Tests.framework */,
+				8608B122BFA4AEE990588B81 /* Pods-IPaSecurity_Tests.debug.xcconfig */,
+				9D97AC4FF346447BE335DF7C /* Pods-IPaSecurity_Tests.release.xcconfig */,
+				2B5352E437BF27A0451DF84B /* Pods-IPaSecurityTests.debug.xcconfig */,
+				3233AF4A725642AFBEDE425D /* Pods-IPaSecurityTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		607FACC71AFB9204008FA782 = {
+		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACE81AFB9204008FA782 /* Tests */,
-				607FACD11AFB9204008FA782 /* Products */,
-				85334848992F0005E4AF229A /* Pods */,
-				1B63419EC8FA599ACFE330C4 /* Frameworks */,
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6E742C871E150A450062CE3A /* IPaSecurity */,
+				6E742C921E150A460062CE3A /* IPaSecurityTests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				395B1FBD3CCCF4DCE1511D4A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		607FACD11AFB9204008FA782 /* Products */ = {
+		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* IPaSecurity_Tests.xctest */,
+				6E742C8E1E150A460062CE3A /* IPaSecurityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
+		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				6E742C6F1E14FEA30062CE3A /* IPaSecurityTest.h */,
-				6E742C701E14FEA30062CE3A /* IPaSecurityTest.m */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				CB17FDA29D6CEE77D1882E32 /* Pods_IPaSecurity_Tests.framework */,
+				D1AFCCA91DCD1B11C9DA4C93 /* libPods-IPaSecurity.a */,
+				5EBA980D2DC17CAAE24A159D /* libPods-IPaSecurityTests.a */,
 			);
-			path = Tests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				140049D0320472E1541AB7C1 /* IPaSecurity.podspec */,
-				89B5B774F6323021B769E82F /* README.md */,
-				2385783CA1D4C43AAB2F5B70 /* LICENSE */,
+				B67B89D78F6FAA41B5A92915 /* IPaSecurity.podspec */,
+				00D56B7EA147BF80F5D0D2A1 /* README.md */,
+				25CAAFBAB2AD48485026DA16 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		85334848992F0005E4AF229A /* Pods */ = {
+		6E742C871E150A450062CE3A /* IPaSecurity */ = {
 			isa = PBXGroup;
 			children = (
-				DC778E08A6D8380F2633C34E /* Pods-IPaSecurity_Tests.debug.xcconfig */,
-				9802331BC14AB4DCBC6D41EB /* Pods-IPaSecurity_Tests.release.xcconfig */,
+				6E742C891E150A450062CE3A /* Info.plist */,
 			);
-			name = Pods;
+			path = IPaSecurity;
+			sourceTree = "<group>";
+		};
+		6E742C921E150A460062CE3A /* IPaSecurityTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E742C9D1E150AA50062CE3A /* IPaSecurityTest.h */,
+				6E742C9E1E150AA50062CE3A /* IPaSecurityTest.m */,
+				6E742C951E150A460062CE3A /* Info.plist */,
+			);
+			path = IPaSecurityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACE41AFB9204008FA782 /* IPaSecurity_Tests */ = {
+		6E742C8D1E150A460062CE3A /* IPaSecurityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "IPaSecurity_Tests" */;
+			buildConfigurationList = 6E742C9C1E150A460062CE3A /* Build configuration list for PBXNativeTarget "IPaSecurityTests" */;
 			buildPhases = (
-				97627B7F0345C7169EEA2982 /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				1FE216EEF82B84B8CA6675A8 /* [CP] Embed Pods Frameworks */,
-				C338F981FE2851C236D31F32 /* [CP] Copy Pods Resources */,
+				DE1176C1B05A8856FBB8ACAE /* [CP] Check Pods Manifest.lock */,
+				6E742C8A1E150A460062CE3A /* Sources */,
+				6E742C8B1E150A460062CE3A /* Frameworks */,
+				6E742C8C1E150A460062CE3A /* Resources */,
+				1768ED9FFB804B13B16F03B3 /* [CP] Embed Pods Frameworks */,
+				F2E79C6918F4FB7F9B740A00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = IPaSecurity_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* IPaSecurity_Tests.xctest */;
+			name = IPaSecurityTests;
+			productName = IPaSecurityTests;
+			productReference = 6E742C8E1E150A460062CE3A /* IPaSecurityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		607FACC81AFB9204008FA782 /* Project object */ = {
+		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = CocoaPods;
+				CLASSPREFIX = IPa;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "IPa Chen";
 				TargetAttributes = {
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+					6E742C8D1E150A460062CE3A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5499977PT2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "IPaSecurity" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "IPaSecurity" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -151,18 +167,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 607FACC71AFB9204008FA782;
-			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACE41AFB9204008FA782 /* IPaSecurity_Tests */,
+				6E742C8D1E150A460062CE3A /* IPaSecurityTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACE31AFB9204008FA782 /* Resources */ = {
+		6E742C8C1E150A460062CE3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -172,7 +188,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1FE216EEF82B84B8CA6675A8 /* [CP] Embed Pods Frameworks */ = {
+		1768ED9FFB804B13B16F03B3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -184,10 +200,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPaSecurityTests/Pods-IPaSecurityTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97627B7F0345C7169EEA2982 /* [CP] Check Pods Manifest.lock */ = {
+		DE1176C1B05A8856FBB8ACAE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,7 +218,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C338F981FE2851C236D31F32 /* [CP] Copy Pods Resources */ = {
+		F2E79C6918F4FB7F9B740A00 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,25 +230,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPaSecurityTests/Pods-IPaSecurityTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		6E742C8A1E150A460062CE3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E742C711E14FEA30062CE3A /* IPaSecurityTest.m in Sources */,
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				6E742C9F1E150AA50062CE3A /* IPaSecurityTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		607FACED1AFB9204008FA782 /* Debug */ = {
+		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,20 +260,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -271,15 +280,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		607FACEE1AFB9204008FA782 /* Release */ = {
+		6003F5BE195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,70 +300,72 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
+		6E742C991E150A460062CE3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC778E08A6D8380F2633C34E /* Pods-IPaSecurity_Tests.debug.xcconfig */;
+			baseConfigurationReference = 2B5352E437BF27A0451DF84B /* Pods-IPaSecurityTests.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5499977PT2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = IPaSecurityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AMagicStudio.IPaSecurityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		607FACF41AFB9204008FA782 /* Release */ = {
+		6E742C9A1E150A460062CE3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9802331BC14AB4DCBC6D41EB /* Pods-IPaSecurity_Tests.release.xcconfig */;
+			baseConfigurationReference = 3233AF4A725642AFBEDE425D /* Pods-IPaSecurityTests.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5499977PT2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = IPaSecurityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AMagicStudio.IPaSecurityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -363,25 +373,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "IPaSecurity" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "IPaSecurity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACED1AFB9204008FA782 /* Debug */,
-				607FACEE1AFB9204008FA782 /* Release */,
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "IPaSecurity_Tests" */ = {
+		6E742C9C1E150A460062CE3A /* Build configuration list for PBXNativeTarget "IPaSecurityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
+				6E742C991E150A460062CE3A /* Debug */,
+				6E742C9A1E150A460062CE3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+	rootObject = 6003F582195388D10070C39A /* Project object */;
 }

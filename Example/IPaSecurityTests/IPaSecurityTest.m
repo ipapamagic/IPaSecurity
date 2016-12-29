@@ -7,8 +7,8 @@
 //
 
 #import "IPaSecurityTest.h"
-#import "NSData+IPaSecurity.h"
-#import "NSString+IPaSecurity.h"
+#import <IPaSecurity/NSData+IPaSecurity.h>
+#import <IPaSecurity/NSString+IPaSecurity.h>
 @implementation IPaSecurityTest
 
 - (void)setUp

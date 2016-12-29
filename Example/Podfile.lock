@@ -1,7 +1,5 @@
 PODS:
-  - IPaLog (1.0)
-  - IPaSecurity (1.0):
-    - IPaLog
+  - IPaSecurity (1.0)
 
 DEPENDENCIES:
   - IPaSecurity (from `../`)
@@ -11,9 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IPaLog: 199e39af2831b48f83967747cadd00bbf505a103
-  IPaSecurity: 73133b22dd4289ac93299427375bdbc70bb7344a
+  IPaSecurity: 7668e806c191c05bd5506d26e41a035ce1013cab
 
-PODFILE CHECKSUM: bafecc31ec8d9540ea8ab4790b2cf01eb4729721
+PODFILE CHECKSUM: bd6674bf2036f1b118c071b3194d559b9fad5371
 
 COCOAPODS: 1.1.1

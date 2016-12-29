@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+
 @interface IPaSecurityTest : XCTestCase
 
 @end
