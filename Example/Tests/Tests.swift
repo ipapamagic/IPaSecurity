@@ -88,8 +88,8 @@
 //            }
 //            var salt:Data?
 //            var info:Data?
-//            if let hexSalt = data["salt"] as? String {
-//                salt = Data(hexString:hexSalt)
+//            if let hexsalt = data["salt"] as? String {
+//                salt = Data(hexString:hexsalt)
 //            }
 //            
 //            let IKM = Data(hexString:hexIKM)
