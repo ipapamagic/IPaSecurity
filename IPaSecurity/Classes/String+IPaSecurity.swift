@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import IDZSwiftCommonCrypto
+import CommonCrypto
 
 extension String {
     public var sha256String:String?
@@ -40,12 +40,11 @@ extension String {
     }
     public var md5String:String?
     {
-        var digest = Digest(algorithm: .md5)
-        if let bytes = digest.update(string: self)?.final() {
-            return hexString(fromArray: bytes)
+        guard let data = self.data(using: .utf8) else {
+            return nil
         }
-        
-        return nil
+        return data.md5String
+
     }
 
 }

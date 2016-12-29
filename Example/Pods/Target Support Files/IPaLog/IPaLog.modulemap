@@ -1,0 +1,6 @@
+framework module IPaLog {
+  umbrella header "IPaLog-umbrella.h"
+
+  export *
+  module * { export * }
+}
