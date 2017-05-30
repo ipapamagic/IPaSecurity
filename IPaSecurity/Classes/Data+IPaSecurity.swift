@@ -185,4 +185,12 @@ extension NSData
     {
         return (self as Data).decrypt(algorithm: algorithm, key: key)
     }
+    public func decrypt(algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
+    {
+        return (self as Data).decrypt(algorithm: algorithm, mode:mode,padding:padding,iv:iv,key:key)
+    }
+    public func encrypt(algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
+    {
+        return (self as Data).encrypt(algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key)
+    }
 }
