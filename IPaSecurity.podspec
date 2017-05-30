@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'IPaSecurity'
-    s.version          = '1.0'
+    s.version          = '1.1'
     s.summary          = 'encrypt/decrypt function for NSData/Data and NSString / String'
     s.homepage         = 'https://github.com/ipapamagic/IPaSecurity'
     s.license          = 'MIT'
