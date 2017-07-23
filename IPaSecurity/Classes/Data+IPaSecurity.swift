@@ -82,11 +82,11 @@ extension Data
     }
     public func decrypt(_ algorithm:CCAlgorithm,key:Data) -> Data?
     {
-        return decrypt(algorithm:algorithm,mode:CCMode(kCCModeCBC),padding:true,iv:nil,key:key)
+        return decrypt(algorithm,mode:CCMode(kCCModeCBC),padding:true,iv:nil,key:key)
     }
     public func decrypt(_ algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
     {
-        return decrypt(algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:0)
+        return decrypt(algorithm,mode:mode,padding:padding,iv:iv,key:key,options:0)
     }
     public func decrypt(_ algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data,options:CCModeOptions) -> Data?
     {
@@ -94,11 +94,11 @@ extension Data
     }
     public func encrypt(_ algorithm:CCAlgorithm, key:Data) -> Data?
     {
-        return encrypt(algorithm:algorithm, mode:CCMode(kCCModeCBC),padding:true ,iv:nil ,key:key)
+        return encrypt(algorithm, mode:CCMode(kCCModeCBC),padding:true ,iv:nil ,key:key)
     }
     public func encrypt(_ algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
     {
-        return encrypt(algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:0)
+        return encrypt(algorithm,mode:mode,padding:padding,iv:iv,key:key,options:0)
     }
     public func encrypt(_ algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data,options:CCModeOptions) -> Data?
     {
@@ -172,25 +172,25 @@ extension Data
     
     
 }
-extension Data
+extension NSData
 {
     public static func createData(_ hexString:String) -> Data {
         return Data(hexString:hexString)
     }
     public func encrypt(_ algorithm:CCAlgorithm, key:Data) -> Data?
     {
-        return (self as Data).encrypt(algorithm: algorithm, key: key)
+        return (self as Data).encrypt(algorithm, key: key)
     }
     public func decrypt(_ algorithm:CCAlgorithm,key:Data) -> Data?
     {
-        return (self as Data).decrypt(algorithm: algorithm, key: key)
+        return (self as Data).decrypt(algorithm, key: key)
     }
     public func decrypt(_ algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
     {
-        return (self as Data).decrypt(algorithm: algorithm, mode:mode,padding:padding,iv:iv,key:key)
+        return (self as Data).decrypt(algorithm, mode:mode,padding:padding,iv:iv,key:key)
     }
     public func encrypt(_ algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
     {
-        return (self as Data).encrypt(algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key)
+        return (self as Data).encrypt(algorithm,mode:mode,padding:padding,iv:iv,key:key)
     }
 }
