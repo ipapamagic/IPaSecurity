@@ -22,13 +22,13 @@ extension Data
         }
     }
     public var hexString:String
-        {
+    {
         get {
             return map { String(format: "%02hhx", $0) }.joined()
         }
         
     }
-    public func cipher(operation:CCOperation,algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data,options:CCModeOptions) -> Data?
+    public func cipher(_ operation:CCOperation,algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data,options:CCModeOptions) -> Data?
     {
         
         var _cryptorRef:CCCryptorRef?
@@ -80,34 +80,34 @@ extension Data
         result.count = movedBytes + totalBytesWritten
         return result
     }
-    public func decrypt(algorithm:CCAlgorithm,key:Data) -> Data?
+    public func decrypt(_ algorithm:CCAlgorithm,key:Data) -> Data?
     {
         return decrypt(algorithm:algorithm,mode:CCMode(kCCModeCBC),padding:true,iv:nil,key:key)
     }
-    public func decrypt(algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
+    public func decrypt(_ algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
     {
         return decrypt(algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:0)
     }
-    public func decrypt(algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data,options:CCModeOptions) -> Data?
+    public func decrypt(_ algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data,options:CCModeOptions) -> Data?
     {
-        return cipher(operation:CCOperation(kCCDecrypt),algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:options)
+        return cipher(CCOperation(kCCDecrypt),algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:options)
     }
-    public func encrypt(algorithm:CCAlgorithm, key:Data) -> Data?
+    public func encrypt(_ algorithm:CCAlgorithm, key:Data) -> Data?
     {
         return encrypt(algorithm:algorithm, mode:CCMode(kCCModeCBC),padding:true ,iv:nil ,key:key)
     }
-    public func encrypt(algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
+    public func encrypt(_ algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
     {
         return encrypt(algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:0)
     }
-    public func encrypt(algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data,options:CCModeOptions) -> Data?
+    public func encrypt(_ algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data,options:CCModeOptions) -> Data?
     {
-        return cipher(operation:CCOperation(kCCEncrypt),algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:options)
+        return cipher(CCOperation(kCCEncrypt),algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:options)
         
     }
     
     public var sha256Data:Data?
-        {
+    {
         get {
             var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
             
@@ -118,7 +118,7 @@ extension Data
         }
     }
     public var sha256String:String
-        {
+    {
         get {
             var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
             
@@ -136,7 +136,7 @@ extension Data
         }
     }
     public var sha1String:String
-        {
+    {
         get {
             var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA1_DIGEST_LENGTH))
             
@@ -153,7 +153,7 @@ extension Data
         }
     }
     public var md5String:String
-        {
+    {
         get {
             var digest = Array<UInt8>(repeating: 0, count: Int(CC_MD5_DIGEST_LENGTH))
             
@@ -172,24 +172,24 @@ extension Data
     
     
 }
-extension NSData
+extension Data
 {
-    public static func createData(hexString:String) -> Data {
+    public static func createData(_ hexString:String) -> Data {
         return Data(hexString:hexString)
     }
-    public func encrypt(algorithm:CCAlgorithm, key:Data) -> Data?
+    public func encrypt(_ algorithm:CCAlgorithm, key:Data) -> Data?
     {
         return (self as Data).encrypt(algorithm: algorithm, key: key)
     }
-    public func decrypt(algorithm:CCAlgorithm,key:Data) -> Data?
+    public func decrypt(_ algorithm:CCAlgorithm,key:Data) -> Data?
     {
         return (self as Data).decrypt(algorithm: algorithm, key: key)
     }
-    public func decrypt(algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
+    public func decrypt(_ algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
     {
         return (self as Data).decrypt(algorithm: algorithm, mode:mode,padding:padding,iv:iv,key:key)
     }
-    public func encrypt(algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
+    public func encrypt(_ algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
     {
         return (self as Data).encrypt(algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key)
     }
