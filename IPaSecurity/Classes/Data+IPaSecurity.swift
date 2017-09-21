@@ -174,22 +174,22 @@ extension Data
 }
 extension NSData
 {
-    public static func createData(_ hexString:String) -> Data {
+    @objc public class func createData(hexString:String) -> Data {
         return Data(hexString:hexString)
     }
-    public func encrypt(_ algorithm:CCAlgorithm, key:Data) -> Data?
+    @objc public func encrypt(algorithm:CCAlgorithm, key:Data) -> Data?
     {
         return (self as Data).encrypt(algorithm, key: key)
     }
-    public func decrypt(_ algorithm:CCAlgorithm,key:Data) -> Data?
+    @objc public func decrypt(algorithm:CCAlgorithm,key:Data) -> Data?
     {
         return (self as Data).decrypt(algorithm, key: key)
     }
-    public func decrypt(_ algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
+    @objc public func decrypt(algorithm:CCAlgorithm,mode:CCMode,padding:Bool,iv:Data?,key:Data) -> Data?
     {
         return (self as Data).decrypt(algorithm, mode:mode,padding:padding,iv:iv,key:key)
     }
-    public func encrypt(_ algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
+    @objc public func encrypt(algorithm:CCAlgorithm, mode:CCMode ,padding:Bool, iv:Data? ,key:Data) -> Data?
     {
         return (self as Data).encrypt(algorithm,mode:mode,padding:padding,iv:iv,key:key)
     }
