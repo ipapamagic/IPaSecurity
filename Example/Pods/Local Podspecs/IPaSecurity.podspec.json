@@ -1,6 +1,6 @@
 {
   "name": "IPaSecurity",
-  "version": "1.1.1",
+  "version": "2.0",
   "summary": "encrypt/decrypt function for NSData/Data and NSString / String",
   "homepage": "https://github.com/ipapamagic/IPaSecurity",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/ipapamagic/IPaSecurity.git",
-    "tag": "1.1.1"
+    "tag": "2.0"
   },
   "platforms": {
     "osx": "10.11",

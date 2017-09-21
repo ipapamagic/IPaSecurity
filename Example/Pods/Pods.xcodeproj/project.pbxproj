@@ -48,26 +48,26 @@
 
 /* Begin PBXFileReference section */
 		04B9F88807C250504873BDA505AAF1CE /* Pods-IPaSecurity_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IPaSecurity_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		0885127A604FC8464EF4FA5EF9A0E026 /* Pods-IPaSecurity_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IPaSecurity_Tests.modulemap"; sourceTree = "<group>"; };
+		0885127A604FC8464EF4FA5EF9A0E026 /* Pods-IPaSecurity_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-IPaSecurity_Tests.modulemap"; sourceTree = "<group>"; };
 		09DEF89E405548F2B380A76C0643A508 /* Data+IPaSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+IPaSecurity.swift"; path = "IPaSecurity/Classes/Data+IPaSecurity.swift"; sourceTree = "<group>"; };
-		0BD1E31A4BA7BEE29830A71E7E98CE4F /* IPaSecurity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IPaSecurity.modulemap; sourceTree = "<group>"; };
+		0BD1E31A4BA7BEE29830A71E7E98CE4F /* IPaSecurity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IPaSecurity.modulemap; sourceTree = "<group>"; };
 		192CE08572D47A3C37023C40F20B53FE /* IPaSecurity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IPaSecurity.xcconfig; sourceTree = "<group>"; };
 		225C0D560A614A6EC24ED8806639A0E5 /* Pods-IPaSecurity_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IPaSecurity_Tests-umbrella.h"; sourceTree = "<group>"; };
 		22F9ED3E64DAC69F9464A40F5A8FB225 /* IPaLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IPaLog-umbrella.h"; sourceTree = "<group>"; };
 		25B8E938C5A0F512CBDFDE10B12DB444 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		27D5A0EE3433838C8E7459E1C89D3C01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DBC53FC03A68568FFC308AFCB615B7B /* Pods_IPaSecurity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IPaSecurity_Tests.framework; path = "Pods-IPaSecurity_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DBC53FC03A68568FFC308AFCB615B7B /* Pods_IPaSecurity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPaSecurity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		336D5855B74BF3203F1B75010A4C5333 /* Pods-IPaSecurity_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IPaSecurity_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3416BD411EEE969AACC908F72D62899F /* IPaSecurity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IPaSecurity-dummy.m"; sourceTree = "<group>"; };
 		39C394EC6A4B985F9E1983A93BD13130 /* Pods-IPaSecurity_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IPaSecurity_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		479CA8E98470D56B437C4D3C1B3BFEDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3597A8BE9318A274606F65D0622812 /* IPaLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPaLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5245051F22D17FAFDED499362AF45DC5 /* IPaSecurity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IPaSecurity-umbrella.h"; sourceTree = "<group>"; };
-		568A0C4F1E17A1D636971D916B0C0E51 /* IPaSecurity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IPaSecurity.framework; path = IPaSecurity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		568A0C4F1E17A1D636971D916B0C0E51 /* IPaSecurity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPaSecurity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		678EDB0EF13C6648BB7ABC11DBABA936 /* Pods-IPaSecurity_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IPaSecurity_Tests-resources.sh"; sourceTree = "<group>"; };
 		70F091BEC89A729B630E7969AEECCD89 /* IPaLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IPaLog-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97649CA7C9D7D6947395A5E79BAFC4D0 /* IPaLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IPaLog.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97649CA7C9D7D6947395A5E79BAFC4D0 /* IPaLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IPaLog.modulemap; sourceTree = "<group>"; };
 		9A7934A38C05FDA13C6C339EB4F1B693 /* Pods-IPaSecurity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IPaSecurity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EC8AC9BA8A55346BC7B69748EAE1129 /* Pods-IPaSecurity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IPaSecurity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A396A4FD893F3271D83887A950832B73 /* IPaLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPaLog.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		CAD6FD8BA30BFCD0A7B507F30F4C61A2 /* Pods-IPaSecurity_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IPaSecurity_Tests-dummy.m"; sourceTree = "<group>"; };
 		E9DD15881C9DB9ECAF9106392AF32FD9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEA39F959FB69CE6CA50BB9508D4E4E5 /* String+IPaSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+IPaSecurity.swift"; path = "IPaSecurity/Classes/String+IPaSecurity.swift"; sourceTree = "<group>"; };
-		FF2C95A1F0E62EE3A5584BDF512D8299 /* IPaLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IPaLog.framework; path = IPaLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2C95A1F0E62EE3A5584BDF512D8299 /* IPaLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPaLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +227,6 @@
 				A396A4FD893F3271D83887A950832B73 /* IPaLog.swift */,
 				05E732EFC5D6735E3F6299BB36BF530E /* Support Files */,
 			);
-			name = IPaLog;
 			path = IPaLog;
 			sourceTree = "<group>";
 		};
@@ -330,7 +329,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					D47E2DD8D589543768936AEF3B8984F8 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -413,7 +417,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -421,14 +427,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -475,7 +487,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -486,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A7934A38C05FDA13C6C339EB4F1B693 /* Pods-IPaSecurity_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -549,7 +563,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -584,7 +598,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -619,7 +633,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -630,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9EC8AC9BA8A55346BC7B69748EAE1129 /* Pods-IPaSecurity_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -674,7 +690,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -682,15 +700,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
