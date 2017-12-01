@@ -15,7 +15,7 @@ extension Data
     init(hexString:String) {
         self.init()
         let regex = try! NSRegularExpression(pattern: "[0-9a-f]{1,2}", options: .caseInsensitive)
-        regex.enumerateMatches(in: hexString, options: [], range: NSMakeRange(0, hexString.characters.count)) { match, flags, stop in
+        regex.enumerateMatches(in: hexString, options: [], range: NSMakeRange(0, hexString.count)) { match, flags, stop in
             let byteString = (hexString as NSString).substring(with: match!.range)
             var num = UInt8(byteString, radix: 16)!
             self.append(&num, count: 1)
