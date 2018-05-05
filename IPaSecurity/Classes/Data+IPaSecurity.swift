@@ -51,12 +51,13 @@ extension Data
         let bufferSize:size_t = CCCryptorGetOutputLength(cryptorRef,self.count,true)
         
         var result = Data(count:bufferSize)
+        let resultCount = result.count
         var movedBytes: size_t = 0
         status = result.withUnsafeMutableBytes({ (resultBytes: UnsafeMutablePointer<UInt8>) -> CCCryptorStatus in
             return CCCryptorUpdate(
                 cryptorRef,
                 (self as NSData).bytes, self.count,
-                resultBytes, result.count,
+                resultBytes, resultCount,
                 &movedBytes)
         })
         guard status == noErr else {
@@ -70,7 +71,7 @@ extension Data
             return CCCryptorFinal(
                 cryptorRef,
                 resultBytes + movedBytes,
-                result.count - movedBytes,
+                resultCount - movedBytes,
                 &totalBytesWritten)
         })
         guard status == noErr else {

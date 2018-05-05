@@ -70,7 +70,7 @@ extension NSString {
         }
         
     }
-    public var md5String:String?
+    @objc public var md5String:String?
     {
         return (self as String).md5String
     }
