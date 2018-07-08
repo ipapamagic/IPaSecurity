@@ -8,10 +8,11 @@
 
 Pod::Spec.new do |s|
     s.name             = 'IPaSecurity'
-    s.version          = '2.1'
+    s.version          = '2.2'
     s.summary          = 'encrypt/decrypt function for NSData/Data and NSString / String'
     s.homepage         = 'https://github.com/ipapamagic/IPaSecurity'
     s.license          = 'MIT'
+    s.swift_version    = '4.1'
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?
     #   * Try to keep it short, snappy and to the point.
@@ -56,16 +57,14 @@ CMD
 
     s.source_files = 'IPaSecurity/Classes/*.swift'
 
-    s.dependency 'IPaLog'
+    s.dependency 'IPaLog', ">= 2.0"
 
     # Stop CocoaPods from deleting dummy frameworks
     s.preserve_paths = "Frameworks"
 
 
     s.xcconfig = {
-        "SWIFT_VERSION" => "4.0",
         "SWIFT_INCLUDE_PATHS" => "${PODS_ROOT}/IPaSecurity/Frameworks/$(PLATFORM_NAME)",
         "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/IPaSecurity/Frameworks/$(PLATFORM_NAME)",
-        "SWIFT_SWIFT3_OBJC_INFERENCE" => "off"
     }
 end
