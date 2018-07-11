@@ -57,7 +57,7 @@ CMD
 
     s.source_files = 'IPaSecurity/Classes/*.swift'
 
-    s.dependency 'IPaLog', ">= 2.0"
+    s.dependency 'IPaLog', ">= 2.1"
 
     # Stop CocoaPods from deleting dummy frameworks
     s.preserve_paths = "Frameworks"
