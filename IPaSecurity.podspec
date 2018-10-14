@@ -8,11 +8,11 @@
 
 Pod::Spec.new do |s|
     s.name             = 'IPaSecurity'
-    s.version          = '2.2'
+    s.version          = '2.3'
     s.summary          = 'encrypt/decrypt function for NSData/Data and NSString / String'
     s.homepage         = 'https://github.com/ipapamagic/IPaSecurity'
     s.license          = 'MIT'
-    s.swift_version    = '4.1'
+    s.swift_version    = '4.2'
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?
     #   * Try to keep it short, snappy and to the point.
