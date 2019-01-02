@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'IPaSecurity'
-    s.version          = '2.3'
+    s.version          = '3.0'
     s.summary          = 'encrypt/decrypt function for NSData/Data and NSString / String'
     s.homepage         = 'https://github.com/ipapamagic/IPaSecurity'
     s.license          = 'MIT'
@@ -27,44 +27,48 @@ Pod::Spec.new do |s|
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.osx.deployment_target = '10.11'
-    s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '11.0'
     s.tvos.deployment_target = '9.0'
     s.watchos.deployment_target = '2.0'
     #
     # Create the dummy CommonCrypto.framework structures
     #
-    s.prepare_command = <<-CMD
-    touch prepare_command.txt
-    echo 'Running prepare_command'
-    pwd
+
+    ###################################################
+    #s.prepare_command = <<-CMD
+    #touch prepare_command.txt
+    #echo 'Running prepare_command'
+    #pwd
 
 
-    echo Running GenerateCommonCryptoModule
+    #echo Running GenerateCommonCryptoModule
     # This was needed to ensure the correct Swift interpreter was
     # used in Xcode 8. Leaving it here, commented out, in case similar
     # issues occur when migrating to Swift 4.0.
-    #TC="--toolchain com.apple.dt.toolchain.Swift_2_3"
-    SWIFT="xcrun $TC swift"
-    $SWIFT ./GenerateCommonCryptoModule.swift macosx .
-    $SWIFT ./GenerateCommonCryptoModule.swift iphonesimulator .
-    $SWIFT ./GenerateCommonCryptoModule.swift iphoneos .
-    $SWIFT ./GenerateCommonCryptoModule.swift appletvsimulator .
-    $SWIFT ./GenerateCommonCryptoModule.swift appletvos .
-    $SWIFT ./GenerateCommonCryptoModule.swift watchsimulator .
-    $SWIFT ./GenerateCommonCryptoModule.swift watchos .
+    ##TC="--toolchain com.apple.dt.toolchain.Swift_2_3"
+    
+    
+    #SWIFT="xcrun $TC swift"
+    #$SWIFT ./GenerateCommonCryptoModule.swift macosx .
+    #$SWIFT ./GenerateCommonCryptoModule.swift iphonesimulator .
+    #$SWIFT ./GenerateCommonCryptoModule.swift iphoneos .
+    #$SWIFT ./GenerateCommonCryptoModule.swift appletvsimulator .
+    #$SWIFT ./GenerateCommonCryptoModule.swift appletvos .
+    #$SWIFT ./GenerateCommonCryptoModule.swift watchsimulator .
+    #$SWIFT ./GenerateCommonCryptoModule.swift watchos .
 
-CMD
-
+    #CMD
+    ######################################################
     s.source_files = 'IPaSecurity/Classes/*.swift'
 
     s.dependency 'IPaLog', ">= 2.1"
 
     # Stop CocoaPods from deleting dummy frameworks
-    s.preserve_paths = "Frameworks"
+    #s.preserve_paths = "Frameworks"
 
 
-    s.xcconfig = {
-        "SWIFT_INCLUDE_PATHS" => "${PODS_ROOT}/IPaSecurity/Frameworks/$(PLATFORM_NAME)",
-        "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/IPaSecurity/Frameworks/$(PLATFORM_NAME)",
-    }
+    #s.xcconfig = {
+    #    "SWIFT_INCLUDE_PATHS" => "${PODS_ROOT}/IPaSecurity/Frameworks/$(PLATFORM_NAME)",
+    #    "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/IPaSecurity/Frameworks/$(PLATFORM_NAME)",
+    #}
 end

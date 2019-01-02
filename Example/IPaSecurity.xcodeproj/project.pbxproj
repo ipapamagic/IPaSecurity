@@ -12,7 +12,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		140049D0320472E1541AB7C1 /* IPaSecurity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IPaSecurity.podspec; path = ../IPaSecurity.podspec; sourceTree = "<group>"; };
+		140049D0320472E1541AB7C1 /* IPaSecurity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IPaSecurity.podspec; path = ../IPaSecurity.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2385783CA1D4C43AAB2F5B70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* IPaSecurity_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPaSecurity_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IPaLog/IPaLog.framework",
 				"${BUILT_PRODUCTS_DIR}/IPaSecurity/IPaSecurity.framework",
 			);
@@ -184,7 +184,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IPaSecurity_Tests/Pods-IPaSecurity_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97627B7F0345C7169EEA2982 /* [CP] Check Pods Manifest.lock */ = {
