@@ -1,6 +1,6 @@
 PODS:
   - IPaLog (2.2)
-  - IPaSecurity (2.3):
+  - IPaSecurity (3.1):
     - IPaLog (>= 2.1)
 
 DEPENDENCIES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   IPaLog: 79b3ca1ac6c0ae7e96ea4a73cbb49808451b804b
-  IPaSecurity: 114d14c4e93aad15ca3efbe6fdedcff428b6b402
+  IPaSecurity: aeeca5c088f8c7829d7b615917451dc1b1152502
 
 PODFILE CHECKSUM: dc617e9a482308af1f573ab29b7e02132d888df9
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.7.0.beta.2

@@ -1,85 +1,85 @@
-//import UIKit
-//import XCTest
-//import IPaSecurity
-//
-//class Tests: XCTestCase {
-//    
-//    override func setUp() {
-//        super.setUp()
-//        // Put setup code here. This method is called before the invocation of each test method in the class.
-//    }
-//    
-//    override func tearDown() {
-//        // Put teardown code here. This method is called after the invocation of each test method in the class.
-//        super.tearDown()
-//    }
-//    
-//    func testPerformanceExample() {
-//        // This is an example of a performance test case.
-//        self.measure {
-//            // Put the code you want to measure the time of here.
-//        }
-//    }
-//    //MARK : XCTestCase
-//    func testSHA256()
-//    {
-//        let testCase = [
-//            "ROCK":"5adfabaf0034944241e990102d633da1570763930acbb84213b8552bd393a17c",
-//            "RACK":"24f13e344a25bc712673222c17042a71d5860f0ad0b2acb23cac226880993608",
-//            "ROCKY":"8fb0c6406e29577e4908d5ba5bc35ec98b08cec26debf76c3d6ecf88774bf264",
-//            "Rock'S saying":"48c7c57ca89c80fe1f0e0759c833b7b8c9cde6ac8fe42675c9299534c083e772"]
-//        for key in testCase.keys {
-//            guard let result = key.sha256String,let realResult = testCase[key] else {
-//                XCTFail("key with sha256 fail")
-//                return
-//            }
-//            
-//            XCTAssert(result == realResult,"SHA256 fail! result not correct")
-//            
-//        }
-//    }
-//    func testSHA1()
-//    {
-//        let testCase =  [ "ROCK":"8f97f5a81bc2a63f2e65b956b0cd5ac334284509",
-//                          "RACK":"ac61253a34bf8d851a1e251d0fa4856527feaa88",
-//                          "ROCKY":"99457410e3c1857f33279f23781ed6ebc93deb4c",
-//                          "Rock'S saying":"a60cee862827c2fc45cb4a7f285f6bfba1a643e8"]
-//        
-//        for key in testCase.keys {
-//            guard let result = key.sha1String,let realResult = testCase[key] else {
-//                XCTFail("key with sha1 fail")
-//                return
-//            }
-//            
-//            XCTAssert(result == realResult,"SHA1 fail! result not correct")
-//            
-//        }
-//        
-//        let data = Data(hexString: "a0b1c2d3e4f5")
-//        let string = data.sha1String
-//        XCTAssert(string == "09162b88bcd444138251012ac80e1444a820259a","SHA1 fail! result not correct")
-//        
-//        
-//        
-//    }
-//    func testMD5()
-//    {
-//        
-//        let testCase = ["ROCK":"afeb717aa2a101f7f64840e0be38c171",
-//                        "RACK":"1ece4bad0efe8b897c6e7f8bd101759f",
-//                        "ROCKY":"6cd910740cbbbbd0f55238a93fba157d",
-//                        "Rock'S saying":"7dca0df0dfa7f76b652e53daa4852640"]
-//        
-//        for key in testCase.keys {
-//            guard let result = key.md5String,let realResult = testCase[key] else {
-//                XCTFail("key with MD5 fail")
-//                return
-//            }
-//            
-//            XCTAssert(result == realResult,"MD5 fail! result not correct")
-//            
-//        }
-//    }
+import UIKit
+import XCTest
+import IPaSecurity
+import CommonCrypto
+class Tests: XCTestCase {
+    
+    override func setUp() {
+        super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
+    
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+    }
+    
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measure {
+            // Put the code you want to measure the time of here.
+        }
+    }
+    //MARK : XCTestCase
+    func testSHA256()
+    {
+        let testCase = [
+            "ROCK":"5adfabaf0034944241e990102d633da1570763930acbb84213b8552bd393a17c",
+            "RACK":"24f13e344a25bc712673222c17042a71d5860f0ad0b2acb23cac226880993608",
+            "ROCKY":"8fb0c6406e29577e4908d5ba5bc35ec98b08cec26debf76c3d6ecf88774bf264",
+            "Rock'S saying":"48c7c57ca89c80fe1f0e0759c833b7b8c9cde6ac8fe42675c9299534c083e772"]
+        for key in testCase.keys {
+            guard let result = key.sha256String,let realResult = testCase[key] else {
+                XCTFail("key with sha256 fail")
+                return
+            }
+            
+            XCTAssert(result == realResult,"SHA256 fail! result not correct")
+            
+        }
+    }
+    func testSHA1()
+    {
+        let testCase =  [ "ROCK":"8f97f5a81bc2a63f2e65b956b0cd5ac334284509",
+                          "RACK":"ac61253a34bf8d851a1e251d0fa4856527feaa88",
+                          "ROCKY":"99457410e3c1857f33279f23781ed6ebc93deb4c",
+                          "Rock'S saying":"a60cee862827c2fc45cb4a7f285f6bfba1a643e8"]
+        
+        for key in testCase.keys {
+            guard let result = key.sha1String,let realResult = testCase[key] else {
+                XCTFail("key with sha1 fail")
+                return
+            }
+            
+            XCTAssert(result == realResult,"SHA1 fail! result not correct")
+            
+        }
+ 
+        let data = Data(hexString: "a0b1c2d3e4f5")
+        let string = data.sha1String
+        XCTAssert(string == "09162b88bcd444138251012ac80e1444a820259a","SHA1 fail! result not correct")
+        
+        
+        
+    }
+    func testMD5()
+    {
+        
+        let testCase = ["ROCK":"afeb717aa2a101f7f64840e0be38c171",
+                        "RACK":"1ece4bad0efe8b897c6e7f8bd101759f",
+                        "ROCKY":"6cd910740cbbbbd0f55238a93fba157d",
+                        "Rock'S saying":"7dca0df0dfa7f76b652e53daa4852640"]
+        
+        for key in testCase.keys {
+            guard let result = key.md5String,let realResult = testCase[key] else {
+                XCTFail("key with MD5 fail")
+                return
+            }
+            
+            XCTAssert(result == realResult,"MD5 fail! result not correct")
+            
+        }
+    }
 //    func subTaskHKDF(algorithm:CCHmacAlgorithm,testData:[[String:Any]]) {
 //        for data in testData {
 //            guard let hexIKM = data["IKM"] as? String ,let length = data["length"] as? Int ,let hexRealOKM = data["realOKM"] as? String else {
@@ -165,6 +165,6 @@
 //        subTaskHKDF(algorithm:CCHmacAlgorithm(kCCHmacAlgSHA1),testData: sha1testData)
 //        
 //    }
-//    
-//}
-//
+    
+}
+

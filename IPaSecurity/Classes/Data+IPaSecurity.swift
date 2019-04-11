@@ -12,7 +12,7 @@ import IPaLog
 
 extension Data
 {
-    init(hexString:String) {
+    public init(hexString:String) {
         self.init()
         let regex = try! NSRegularExpression(pattern: "[0-9a-f]{1,2}", options: .caseInsensitive)
         regex.enumerateMatches(in: hexString, options: [], range: NSMakeRange(0, hexString.count)) { match, flags, stop in
@@ -53,11 +53,12 @@ extension Data
         var result = Data(count:bufferSize)
         let resultCount = result.count
         var movedBytes: size_t = 0
-        status = result.withUnsafeMutableBytes({ (resultBytes: UnsafeMutablePointer<UInt8>) -> CCCryptorStatus in
+        
+        status = result.withUnsafeMutableBytes({ (resultBytes: UnsafeMutableRawBufferPointer) -> CCCryptorStatus in
             return CCCryptorUpdate(
                 cryptorRef,
                 (self as NSData).bytes, self.count,
-                resultBytes, resultCount,
+                resultBytes.baseAddress, resultCount,
                 &movedBytes)
         })
         guard status == noErr else {
@@ -67,10 +68,10 @@ extension Data
         
         var totalBytesWritten:size_t = 0
         
-        status = result.withUnsafeMutableBytes({ (resultBytes: UnsafeMutablePointer<UInt8>) -> CCCryptorStatus in
+        status = result.withUnsafeMutableBytes({ (resultBytes: UnsafeMutableRawBufferPointer) -> CCCryptorStatus in
             return CCCryptorFinal(
                 cryptorRef,
-                resultBytes + movedBytes,
+                resultBytes.baseAddress! + movedBytes,
                 resultCount - movedBytes,
                 &totalBytesWritten)
         })
@@ -113,9 +114,9 @@ extension Data
             var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
             
             withUnsafeBytes {
-                _ = CC_SHA256($0,CC_LONG(self.count),&digest)
+                _ = CC_SHA256($0.baseAddress,CC_LONG(self.count),&digest)
             }
-            return Data(bytes:digest)
+            return Data(digest)
         }
     }
     public var sha256String:String
@@ -124,7 +125,7 @@ extension Data
             var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
             
             withUnsafeBytes {
-                _ = CC_SHA256($0,CC_LONG(self.count),&digest)
+                _ = CC_SHA256($0.baseAddress,CC_LONG(self.count),&digest)
             }
             var output = ""
             for i in 0 ..< Int(CC_SHA256_DIGEST_LENGTH) {
@@ -142,7 +143,7 @@ extension Data
             var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA1_DIGEST_LENGTH))
             
             withUnsafeBytes {
-                _ = CC_SHA1($0,CC_LONG(self.count),&digest)
+                _ = CC_SHA1($0.baseAddress,CC_LONG(self.count),&digest)
             }
             var output = ""
             for i in 0 ..< Int(CC_SHA1_DIGEST_LENGTH) {
@@ -159,7 +160,7 @@ extension Data
             var digest = Array<UInt8>(repeating: 0, count: Int(CC_MD5_DIGEST_LENGTH))
             
             withUnsafeBytes {
-                _ = CC_MD5($0,CC_LONG(self.count),&digest)
+                _ = CC_MD5($0.baseAddress,CC_LONG(self.count),&digest)
             }
             var output = ""
             for i in 0 ..< Int(CC_MD5_DIGEST_LENGTH) {
