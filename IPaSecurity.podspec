@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
     ######################################################
     s.source_files = 'IPaSecurity/Classes/*.swift'
 
-    s.dependency 'IPaLog', ">= 2.1"
+    s.dependency 'IPaLog', "~> 3.0"
 
     # Stop CocoaPods from deleting dummy frameworks
     #s.preserve_paths = "Frameworks"
