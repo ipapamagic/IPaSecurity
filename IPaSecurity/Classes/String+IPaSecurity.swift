@@ -7,46 +7,63 @@
 //
 
 import Foundation
-import CommonCrypto
+import CryptoKit
 
+extension HashFunction {
+
+    @inlinable public static func hashString(for string: String) -> String? {
+        guard let encodeData = string.data(using: .utf8) else {
+            return nil
+        }
+        return self.hash(data: encodeData).hexString
+    }
+    @inlinable public static func hash(string: String) -> Data?  {
+        guard let encodeData = string.data(using: .utf8) else {
+            return nil
+        }
+        return Data(self.hash(data: encodeData))
+    }
+}
 extension String {
-    public var sha256String:String?
+    @inlinable public var sha512String:String?
     {
         get {
-            guard let encodeData = data(using: .utf8) else {
-                return nil
-            }
-            return encodeData.sha256String
+            return SHA512.hashString(for: self)
         }
     }
-    public var sha256Data:Data?
+    @inlinable public var sha512Data:Data?
     {
         get {
-            guard let encodeData = data(using: .utf8) else {
-                return nil
-            }
-            return encodeData.sha256Data
+            return SHA512.hash(string: self)
         }
     }
-    public var sha1String:String?
+    @inlinable public var sha256String:String?
     {
         get {
-            guard let encodeData = data(using: .utf8) else {
-                return nil
-            }
-            return encodeData.sha1String
+            return SHA256.hashString(for: self)
+        }
+    }
+    @inlinable public var sha256Data:Data?
+    {
+        get {
+            return SHA256.hash(string: self)
+        }
+    }
+    @inlinable public var sha1String:String?
+    {
+        get {
+            return Insecure.SHA1.hashString(for: self)
         }
     
     }
-    public var md5String:String?
+    @inlinable public var md5String:String?
     {
-        guard let data = self.data(using: .utf8) else {
-            return nil
+        get {
+            return Insecure.MD5.hashString(for: self)
         }
-        return data.md5String
 
     }
-    public var snakeCaseString:String? {
+    @inlinable public var snakeCaseString:String? {
         let pattern = "([a-z0-9])([A-Z])"
         
         let regex = try? NSRegularExpression(pattern: pattern, options: [])

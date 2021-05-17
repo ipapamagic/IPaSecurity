@@ -8,11 +8,11 @@
 
 Pod::Spec.new do |s|
     s.name             = 'IPaSecurity'
-    s.version          = '3.1'
+    s.version          = '4.0'
     s.summary          = 'encrypt/decrypt function for NSData/Data and NSString / String'
     s.homepage         = 'https://github.com/ipapamagic/IPaSecurity'
     s.license          = 'MIT'
-    s.swift_version    = '5.0'
+    s.swift_version    = '5.3'
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?
     #   * Try to keep it short, snappy and to the point.
@@ -26,10 +26,10 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/ipapamagic/IPaSecurity.git', :tag => s.version.to_s}
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-    s.osx.deployment_target = '10.11'
-    s.ios.deployment_target = '9.0'
-    s.tvos.deployment_target = '9.0'
-    s.watchos.deployment_target = '2.0'
+    s.osx.deployment_target = '10.15'
+    s.ios.deployment_target = '13.0'
+    s.tvos.deployment_target = '13.0'
+    s.watchos.deployment_target = '6.0'
     #
     # Create the dummy CommonCrypto.framework structures
     #
