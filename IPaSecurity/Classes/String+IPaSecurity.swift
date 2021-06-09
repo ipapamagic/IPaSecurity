@@ -9,6 +9,7 @@
 import Foundation
 import CryptoKit
 
+@available(iOS 13.0, *)
 extension HashFunction {
 
     @inlinable public static func hashString(for string: String) -> String? {
@@ -24,6 +25,7 @@ extension HashFunction {
         return Data(self.hash(data: encodeData))
     }
 }
+@available(iOS 13.0, *)
 extension String {
     @inlinable public var sha512String:String?
     {
@@ -73,29 +75,3 @@ extension String {
 }
 
 
-extension NSString {
-    public var sha256String:String?
-        {
-        get {
-            return (self as String).sha256String
-        }
-    }
-    public var sha256Data:Data?
-        {
-        get {
-            return (self as String).sha256Data
-        }
-    }
-    public var sha1String:String?
-        {
-        get {
-            return (self as String).sha1String
-        }
-        
-    }
-    @objc public var md5String:String?
-    {
-        return (self as String).md5String
-    }
-    
-}
