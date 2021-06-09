@@ -25,14 +25,16 @@ extension HashFunction {
         return Data(self.hash(data: encodeData))
     }
 }
-@available(iOS 13.0, *)
+
 extension String {
+    @available(iOS 13.0, *)
     @inlinable public var sha512String:String?
     {
         get {
             return SHA512.hashString(for: self)
         }
     }
+    @available(iOS 13.0, *)
     @inlinable public var sha512Data:Data?
     {
         get {
@@ -42,26 +44,58 @@ extension String {
     @inlinable public var sha256String:String?
     {
         get {
-            return SHA256.hashString(for: self)
+            if #available(iOS 13.0, *) {
+                return SHA256.hashString(for: self)
+            } else {
+                // Fallback on earlier versions
+                guard let encodeData = data(using: .utf8) else {
+                    return nil
+                }
+                return encodeData.sha256String
+            }
         }
     }
     @inlinable public var sha256Data:Data?
     {
         get {
-            return SHA256.hash(string: self)
+            if #available(iOS 13.0, *) {
+                return SHA256.hash(string: self)
+            } else {
+                // Fallback on earlier versions
+                guard let encodeData = data(using: .utf8) else {
+                    return nil
+                }
+                return encodeData.sha256Data
+            }
         }
     }
     @inlinable public var sha1String:String?
     {
         get {
-            return Insecure.SHA1.hashString(for: self)
+            if #available(iOS 13.0, *) {
+                return Insecure.SHA1.hashString(for: self)
+            } else {
+                // Fallback on earlier versions
+                guard let encodeData = data(using: .utf8) else {
+                    return nil
+                }
+                return encodeData.sha1String
+            }
         }
     
     }
     @inlinable public var md5String:String?
     {
         get {
-            return Insecure.MD5.hashString(for: self)
+            if #available(iOS 13.0, *) {
+                return Insecure.MD5.hashString(for: self)
+            } else {
+                // Fallback on earlier versions
+                guard let data = self.data(using: .utf8) else {
+                    return nil
+                }
+                return data.md5String
+            }
         }
 
     }

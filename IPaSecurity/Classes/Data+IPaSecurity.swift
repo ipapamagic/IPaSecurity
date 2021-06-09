@@ -27,7 +27,7 @@ extension HashFunction {
         return self.hash(data: data).hexString
     }
 }
-@available(iOS 13.0, *)
+
 extension Data
 {
     public init(hexString:String) {
@@ -46,6 +46,7 @@ extension Data
         }
         
     }
+    @available(iOS 13.0, *)
     @inlinable public var sha512Data:Data?
     {
         get {
@@ -56,10 +57,21 @@ extension Data
     @inlinable public var sha256Data:Data?
     {
         get {
-            let digest = SHA256.hash(data: self)
-            return Data(digest)
+            if #available(iOS 13.0, *) {
+                let digest = SHA256.hash(data: self)
+                return Data(digest)
+            } else {
+                // Fallback on earlier versions
+                var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
+                
+                withUnsafeBytes {
+                    _ = CC_SHA256($0.baseAddress,CC_LONG(self.count),&digest)
+                }
+                return Data(digest)
+            }
         }
     }
+    @available(iOS 13.0, *)
     @inlinable public var sha512String:String
     {
         get {
@@ -69,22 +81,71 @@ extension Data
     @inlinable public var sha256String:String
     {
         get {
-            return SHA256.hashString(for: self)
+            if #available(iOS 13.0, *) {
+                return SHA256.hashString(for: self)
+            } else {
+                // Fallback on earlier versions
+                var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
+                
+                withUnsafeBytes {
+                    _ = CC_SHA256($0.baseAddress,CC_LONG(self.count),&digest)
+                }
+                var output = ""
+                for i in 0 ..< Int(CC_SHA256_DIGEST_LENGTH) {
+                    
+                    output += String(format: "%02x", digest[i])
+                    
+                }
+                return output
+            }
         }
     }
     @inlinable public var sha1String:String
     {
         get {
-            return Insecure.SHA1.hashString(for: self)
+            if #available(iOS 13.0, *) {
+                return Insecure.SHA1.hashString(for: self)
+            } else {
+                // Fallback on earlier versions
+                var digest = Array<UInt8>(repeating: 0, count: Int(CC_SHA1_DIGEST_LENGTH))
+                
+                withUnsafeBytes {
+                    _ = CC_SHA1($0.baseAddress,CC_LONG(self.count),&digest)
+                }
+                var output = ""
+                for i in 0 ..< Int(CC_SHA1_DIGEST_LENGTH) {
+                    
+                    output += String(format: "%02x", digest[i])
+                    
+                }
+                return output
+            }
         }
     }
     @inlinable public var md5String:String
     {
         get {
-            return Insecure.MD5.hashString(for: self)
+            if #available(iOS 13.0, *) {
+                return Insecure.MD5.hashString(for: self)
+            } else {
+                // Fallback on earlier versions
+                var digest = Array<UInt8>(repeating: 0, count: Int(CC_MD5_DIGEST_LENGTH))
+                
+                withUnsafeBytes {
+                    _ = CC_MD5($0.baseAddress,CC_LONG(self.count),&digest)
+                }
+                var output = ""
+                for i in 0 ..< Int(CC_MD5_DIGEST_LENGTH) {
+                    
+                    output += String(format: "%02x", digest[i])
+                    
+                }
+                return output
+            }
         }
     }
     
+    @available(iOS 13.0, *)
     public func aesEncrypt(_ hexKey:String) -> Data? {
         let data = Data(hexString: hexKey)
         let symmetricKey = SymmetricKey(data: data)
@@ -93,6 +154,7 @@ extension Data
         }
         return sealedData.combined
     }
+    @available(iOS 13.0, *)
     public func aesDecrypt(_ hexKey:String) -> Data? {
         
         guard let sealedBox = try? AES.GCM.SealedBox(combined: self) else {
