@@ -176,7 +176,7 @@ extension Data
 extension Data
 {
     
-    func cipher(_ operation:CCOperation,algorithm:CCAlgorithm,mode:CCMode = CCMode(kCCModeCBC),padding:Bool = true,iv:Data? = nil,key:Data,options:CCModeOptions = 0) -> Data?
+    public func cipher(_ operation:CCOperation,algorithm:CCAlgorithm,mode:CCMode = CCMode(kCCModeCBC),padding:Bool = true,iv:Data? = nil,key:Data,options:CCModeOptions = 0) -> Data?
     {
         
         var _cryptorRef:CCCryptorRef?
@@ -231,7 +231,7 @@ extension Data
         return result
     }
     
-    func decrypt(_ algorithm:CCAlgorithm,mode:CCMode = CCMode(kCCModeCBC) ,padding:Bool = true,iv:Data? = nil,key:Data,options:CCModeOptions = 0) -> Data?
+    public func decrypt(_ algorithm:CCAlgorithm,mode:CCMode = CCMode(kCCModeCBC) ,padding:Bool = true,iv:Data? = nil,key:Data,options:CCModeOptions = 0) -> Data?
     {
         return cipher(CCOperation(kCCDecrypt),algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:options)
     }
