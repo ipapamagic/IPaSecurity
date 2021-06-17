@@ -235,4 +235,8 @@ extension Data
     {
         return cipher(CCOperation(kCCDecrypt),algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:options)
     }
+    public func encrypt(_ algorithm:CCAlgorithm,mode:CCMode = CCMode(kCCModeCBC) ,padding:Bool = true,iv:Data? = nil,key:Data,options:CCModeOptions = 0) -> Data?
+    {
+        return cipher(CCOperation(kCCEncrypt),algorithm:algorithm,mode:mode,padding:padding,iv:iv,key:key,options:options)
+    }
 }
