@@ -106,6 +106,25 @@ extension String {
         let range = NSRange(location: 0, length: self.count)
         return regex?.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: "$1_$2").lowercased()
     }
+    @inlinable public var base64UrlString:String {
+        var result = Data(self.utf8).base64EncodedString()
+        result = result.replacingOccurrences(of: "+", with: "-")
+        result = result.replacingOccurrences(of: "/", with: "_")
+        result = result.replacingOccurrences(of: "=", with: "")
+        return result
+    }
+    public init?(base64Url:String) {
+        var string = base64Url
+        string = string.replacingOccurrences(of: "-", with: "+")
+        string = string.replacingOccurrences(of: "_", with: "/")
+        while string.count % 4 != 0 {
+            string = string.appending("=")
+        }
+        guard let data = Data(base64Encoded: string) else {
+            return nil
+        }
+        self.init(data: data, encoding: .utf8)
+    }
 }
 
 
