@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'IPaSecurity'
-    s.version          = '4.0'
+    s.version          = '4.1.0'
     s.summary          = 'encrypt/decrypt function for NSData/Data and NSString / String'
     s.homepage         = 'https://github.com/ipapamagic/IPaSecurity'
     s.license          = 'MIT'
@@ -59,9 +59,9 @@ Pod::Spec.new do |s|
 
     #CMD
     ######################################################
-    s.source_files = 'IPaSecurity/Classes/*.swift'
+    s.source_files = 'Sources/IPaSecurity/*.swift'
 
-    s.dependency 'IPaLog', "~> 3.0"
+    s.dependency 'IPaLog', "~> 3.1.0"
 
     # Stop CocoaPods from deleting dummy frameworks
     #s.preserve_paths = "Frameworks"
