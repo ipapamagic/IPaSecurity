@@ -113,6 +113,18 @@ extension String {
         result = result.replacingOccurrences(of: "=", with: "")
         return result
     }
+    @inlinable public var localized: String {
+        NSLocalizedString(self, comment: "")
+    }
+    @inlinable public func localized(_ args: CVarArg...) -> String {
+        return String(format: NSLocalizedString(self, comment: ""),arguments: args)
+    }
+    @inlinable public var isValidEmail:Bool {
+        let emailRegex = "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}$"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: self)
+        
+    }
     public init?(base64Url:String) {
         var string = base64Url
         string = string.replacingOccurrences(of: "-", with: "+")
